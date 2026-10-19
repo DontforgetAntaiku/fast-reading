@@ -1,0 +1,18 @@
+.ftr {
+  max-width: 880px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 16px 16px calc(24px + env(safe-area-inset-bottom));
+  color: var(--muted);
+  font-size: 0.8125rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 4px 16px;
+}
+.ftr p {
+  margin: 0;
+}
+.ftr-off {
+  color: var(--accent);
+}
