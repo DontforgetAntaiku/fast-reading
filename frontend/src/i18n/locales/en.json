@@ -7,7 +7,7 @@
   "clear": "Clear",
   "sample": "Try a sample",
   "sampleText": "Reading quickly is a skill you can train. Words appear one by one in the same spot, so your eyes never have to move across the line. Start slowly, then raise the speed whenever it feels comfortable. Take a break when you get tired.",
-  "fileError": "Could not read this file. Use a plain text file (.txt, .md, .html, .csv, .srt, …).",
+  "fileError": "Unsupported file. Use a text, Markdown, HTML, subtitles, FB2 or PDF file.",
   "fileTooBig": "File is too large (limit 5 MB).",
   "startReading": "Start reading",
   "words": "Words",
@@ -38,5 +38,9 @@
   "position": "Position",
   "editText": "Edit text",
   "empty": "Add some text or open a file first.",
-  "offlineReady": "Ready to use offline"
+  "offlineReady": "Ready to use offline",
+  "pdfError": "Could not read this PDF. It may be damaged.",
+  "pdfNoText": "This PDF has no selectable text (it looks like scanned images). Use a text-based PDF.",
+  "pdfEncrypted": "This PDF is password-protected. Remove the password first.",
+  "loadingFile": "Reading file…"
 }

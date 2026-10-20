@@ -7,7 +7,7 @@
   "clear": "Wissen",
   "sample": "Voorbeeld proberen",
   "sampleText": "Snellezen kun je trainen. De woorden verschijnen één voor één op dezelfde plek, zodat je ogen niet over de regel hoeven te bewegen. Begin langzaam en verhoog het tempo als het prettig voelt. Neem een pauze als je moe wordt.",
-  "fileError": "Kan dit bestand niet lezen. Gebruik een tekstbestand (.txt, .md, .html, .csv, .srt, …).",
+  "fileError": "Niet-ondersteund bestand. Gebruik tekst, Markdown, HTML, ondertitels, FB2 of pdf.",
   "fileTooBig": "Bestand is te groot (limiet 5 MB).",
   "startReading": "Begin met lezen",
   "words": "Woorden",
@@ -38,5 +38,9 @@
   "position": "Positie",
   "editText": "Tekst bewerken",
   "empty": "Voeg eerst tekst toe of open een bestand.",
-  "offlineReady": "Offline te gebruiken"
+  "offlineReady": "Offline te gebruiken",
+  "pdfError": "Deze pdf kon niet worden gelezen. Hij is mogelijk beschadigd.",
+  "pdfNoText": "Deze pdf bevat geen selecteerbare tekst (lijkt gescand). Gebruik een pdf met tekstlaag.",
+  "pdfEncrypted": "Deze pdf is beveiligd met een wachtwoord. Verwijder eerst het wachtwoord.",
+  "loadingFile": "Bestand lezen…"
 }

@@ -7,7 +7,7 @@
   "clear": "Cancella",
   "sample": "Prova un esempio",
   "sampleText": "La lettura veloce si può allenare. Le parole compaiono una alla volta nello stesso punto, così gli occhi non devono scorrere lungo la riga. Inizia piano e aumenta la velocità quando ti senti a tuo agio. Fai una pausa se ti stanchi.",
-  "fileError": "Impossibile leggere il file. Usa un file di testo (.txt, .md, .html, .csv, .srt, …).",
+  "fileError": "File non supportato. Usa testo, Markdown, HTML, sottotitoli, FB2 o PDF.",
   "fileTooBig": "Il file è troppo grande (limite 5 MB).",
   "startReading": "Inizia a leggere",
   "words": "Parole",
@@ -38,5 +38,9 @@
   "position": "Posizione",
   "editText": "Modifica testo",
   "empty": "Aggiungi prima del testo o apri un file.",
-  "offlineReady": "Utilizzabile offline"
+  "offlineReady": "Utilizzabile offline",
+  "pdfError": "Impossibile leggere questo PDF. Potrebbe essere danneggiato.",
+  "pdfNoText": "Questo PDF non contiene testo selezionabile (sembra una scansione). Usa un PDF con livello di testo.",
+  "pdfEncrypted": "Questo PDF è protetto da password. Rimuovi prima la password.",
+  "loadingFile": "Lettura del file…"
 }

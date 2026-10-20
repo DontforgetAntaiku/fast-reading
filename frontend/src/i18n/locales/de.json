@@ -7,7 +7,7 @@
   "clear": "Leeren",
   "sample": "Beispieltext",
   "sampleText": "Schnelllesen kann man trainieren. Die Wörter erscheinen nacheinander an derselben Stelle, sodass die Augen nicht über die Zeile wandern müssen. Beginne langsam und erhöhe das Tempo, sobald es sich angenehm anfühlt. Mach eine Pause, wenn du müde wirst.",
-  "fileError": "Die Datei konnte nicht gelesen werden. Nutze eine Textdatei (.txt, .md, .html, .csv, .srt, …).",
+  "fileError": "Nicht unterstützte Datei. Nutze Text, Markdown, HTML, Untertitel, FB2 oder PDF.",
   "fileTooBig": "Die Datei ist zu groß (Limit 5 MB).",
   "startReading": "Lesen starten",
   "words": "Wörter",
@@ -38,5 +38,9 @@
   "position": "Position",
   "editText": "Text bearbeiten",
   "empty": "Füge zuerst Text hinzu oder öffne eine Datei.",
-  "offlineReady": "Offline nutzbar"
+  "offlineReady": "Offline nutzbar",
+  "pdfError": "Diese PDF konnte nicht gelesen werden. Sie ist möglicherweise beschädigt.",
+  "pdfNoText": "Diese PDF enthält keinen markierbaren Text (wahrscheinlich Scans). Nutze eine PDF mit Textebene.",
+  "pdfEncrypted": "Diese PDF ist passwortgeschützt. Entferne zuerst das Passwort.",
+  "loadingFile": "Datei wird gelesen…"
 }

@@ -7,7 +7,7 @@
   "clear": "Vymazat",
   "sample": "Zkusit ukázku",
   "sampleText": "Rychlé čtení se dá trénovat. Slova se objevují jedno po druhém na stejném místě, takže oči nemusí běhat po řádku. Začněte pomalu a zrychlujte, až se budete cítit pohodlně. Když se unavíte, udělejte si pauzu.",
-  "fileError": "Soubor se nepodařilo přečíst. Použijte textový soubor (.txt, .md, .html, .csv, .srt, …).",
+  "fileError": "Nepodporovaný soubor. Použijte text, Markdown, HTML, titulky, FB2 nebo PDF.",
   "fileTooBig": "Soubor je příliš velký (limit 5 MB).",
   "startReading": "Začít číst",
   "words": "Slov",
@@ -38,5 +38,9 @@
   "position": "Pozice",
   "editText": "Upravit text",
   "empty": "Nejprve přidejte text nebo otevřete soubor.",
-  "offlineReady": "Funguje offline"
+  "offlineReady": "Funguje offline",
+  "pdfError": "Tento PDF se nepodařilo přečíst. Může být poškozený.",
+  "pdfNoText": "Tento PDF neobsahuje vybratelný text (vypadá jako sken). Použijte PDF s textovou vrstvou.",
+  "pdfEncrypted": "Tento PDF je chráněn heslem. Nejdříve heslo odstraňte.",
+  "loadingFile": "Načítání souboru…"
 }

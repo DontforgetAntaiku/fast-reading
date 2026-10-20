@@ -7,7 +7,7 @@
   "clear": "Temizle",
   "sample": "Örnek dene",
   "sampleText": "Hızlı okuma çalışılarak geliştirilebilir. Kelimeler aynı noktada tek tek belirir, böylece gözleriniz satır boyunca gezmek zorunda kalmaz. Yavaş başlayın, rahat hissettiğinizde hızı artırın. Yorulursanız ara verin.",
-  "fileError": "Dosya okunamadı. Düz metin dosyası kullanın (.txt, .md, .html, .csv, .srt, …).",
+  "fileError": "Desteklenmeyen dosya. Metin, Markdown, HTML, altyazı, FB2 veya PDF kullanın.",
   "fileTooBig": "Dosya çok büyük (sınır 5 MB).",
   "startReading": "Okumaya başla",
   "words": "Kelime",
@@ -38,5 +38,9 @@
   "position": "Konum",
   "editText": "Metni düzenle",
   "empty": "Önce metin ekleyin veya bir dosya açın.",
-  "offlineReady": "Çevrimdışı kullanıma hazır"
+  "offlineReady": "Çevrimdışı kullanıma hazır",
+  "pdfError": "Bu PDF okunamadı. Hasarlı olabilir.",
+  "pdfNoText": "Bu PDF'de seçilebilir metin yok (taranmış görüntü gibi görünüyor). Metin katmanı olan bir PDF kullanın.",
+  "pdfEncrypted": "Bu PDF parola korumalı. Önce parolayı kaldırın.",
+  "loadingFile": "Dosya okunuyor…"
 }

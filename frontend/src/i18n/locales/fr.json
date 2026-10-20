@@ -7,7 +7,7 @@
   "clear": "Effacer",
   "sample": "Essayer un exemple",
   "sampleText": "La lecture rapide s’apprend. Les mots apparaissent un par un au même endroit, vos yeux n’ont donc pas à parcourir la ligne. Commencez lentement, puis augmentez la vitesse quand vous êtes à l’aise. Faites une pause si vous êtes fatigué.",
-  "fileError": "Impossible de lire ce fichier. Utilisez un fichier texte (.txt, .md, .html, .csv, .srt, …).",
+  "fileError": "Fichier non pris en charge. Utilisez du texte, Markdown, HTML, des sous-titres, FB2 ou PDF.",
   "fileTooBig": "Fichier trop volumineux (limite 5 Mo).",
   "startReading": "Commencer la lecture",
   "words": "Mots",
@@ -38,5 +38,9 @@
   "position": "Position",
   "editText": "Modifier le texte",
   "empty": "Ajoutez d’abord du texte ou ouvrez un fichier.",
-  "offlineReady": "Utilisable hors ligne"
+  "offlineReady": "Utilisable hors ligne",
+  "pdfError": "Impossible de lire ce PDF. Il est peut-être endommagé.",
+  "pdfNoText": "Ce PDF ne contient pas de texte sélectionnable (il semble numérisé). Utilisez un PDF avec couche de texte.",
+  "pdfEncrypted": "Ce PDF est protégé par un mot de passe. Retirez-le d'abord.",
+  "loadingFile": "Lecture du fichier…"
 }

@@ -7,7 +7,7 @@
   "clear": "Limpar",
   "sample": "Experimentar um exemplo",
   "sampleText": "A leitura rápida pode ser treinada. As palavras aparecem uma a uma no mesmo lugar, então os olhos não precisam percorrer a linha. Comece devagar e aumente a velocidade quando se sentir à vontade. Faça uma pausa se cansar.",
-  "fileError": "Não foi possível ler o arquivo. Use um arquivo de texto (.txt, .md, .html, .csv, .srt, …).",
+  "fileError": "Arquivo não suportado. Use texto, Markdown, HTML, legendas, FB2 ou PDF.",
   "fileTooBig": "O arquivo é grande demais (limite de 5 MB).",
   "startReading": "Começar a ler",
   "words": "Palavras",
@@ -38,5 +38,9 @@
   "position": "Posição",
   "editText": "Editar texto",
   "empty": "Primeiro adicione texto ou abra um arquivo.",
-  "offlineReady": "Pronto para uso offline"
+  "offlineReady": "Pronto para uso offline",
+  "pdfError": "Não foi possível ler este PDF. Ele pode estar danificado.",
+  "pdfNoText": "Este PDF não tem texto selecionável (parece digitalizado). Use um PDF com camada de texto.",
+  "pdfEncrypted": "Este PDF está protegido por senha. Remova a senha primeiro.",
+  "loadingFile": "Lendo arquivo…"
 }

@@ -56,30 +56,3 @@ export function formatTime(ms: number): string {
   const ss = String(s % 60).padStart(2, '0')
   return h ? `${h}:${String(m).padStart(2, '0')}:${ss}` : `${m}:${ss}`
 }
-
-export const MAX_FILE_BYTES = 5 * 1024 * 1024
-
-export async function readTextFile(file: File): Promise<string> {
-  if (file.size > MAX_FILE_BYTES) throw new Error('big')
-  const buf = await file.arrayBuffer()
-  let text: string
-  try {
-    text = new TextDecoder('utf-8', { fatal: true }).decode(buf)
-  } catch {
-    text = new TextDecoder('windows-1251').decode(buf)
-  }
-  if (text.includes('\u0000')) throw new Error('binary')
-  const name = file.name.toLowerCase()
-  if (/\.(html?|xhtml|fb2|xml)$/.test(name)) {
-    const doc = new DOMParser().parseFromString(text, 'text/html')
-    doc.querySelectorAll('script,style').forEach((n) => n.remove())
-    return doc.body.textContent ?? ''
-  }
-  if (/\.(srt|vtt)$/.test(name)) {
-    return text
-      .split(/\r?\n/)
-      .filter((l) => !/^\s*\d+\s*$/.test(l) && !/-->/.test(l) && l.trim() !== 'WEBVTT')
-      .join('\n')
-  }
-  return text
-}

@@ -7,7 +7,7 @@
   "clear": "Wyczyść",
   "sample": "Wypróbuj przykład",
   "sampleText": "Szybkiego czytania można się nauczyć. Słowa pojawiają się jedno po drugim w tym samym miejscu, więc oczy nie muszą wędrować po wierszu. Zacznij powoli i zwiększaj tempo, gdy będzie ci wygodnie. Zrób przerwę, gdy poczujesz zmęczenie.",
-  "fileError": "Nie udało się odczytać pliku. Użyj pliku tekstowego (.txt, .md, .html, .csv, .srt, …).",
+  "fileError": "Nieobsługiwany plik. Użyj tekstu, Markdown, HTML, napisów, FB2 lub PDF.",
   "fileTooBig": "Plik jest za duży (limit 5 MB).",
   "startReading": "Zacznij czytać",
   "words": "Słowa",
@@ -38,5 +38,9 @@
   "position": "Pozycja",
   "editText": "Edytuj tekst",
   "empty": "Najpierw dodaj tekst lub otwórz plik.",
-  "offlineReady": "Działa offline"
+  "offlineReady": "Działa offline",
+  "pdfError": "Nie udało się odczytać tego PDF-a. Może być uszkodzony.",
+  "pdfNoText": "Ten PDF nie ma zaznaczalnego tekstu (wygląda na skany). Użyj PDF-a z warstwą tekstową.",
+  "pdfEncrypted": "Ten PDF jest chroniony hasłem. Najpierw usuń hasło.",
+  "loadingFile": "Wczytywanie pliku…"
 }

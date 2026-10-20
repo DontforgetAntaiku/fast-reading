@@ -26,8 +26,15 @@ Start at a comfortable speed (200–300 wpm) and raise it a little every few min
 
 ## Features
 
-- **Text or file** — type, paste, or open `.txt`, `.md`, `.html`, `.csv`, `.srt`, `.vtt`, `.fb2`, `.xml`, `.json`, `.log` …
-  UTF-8 is tried first, then `windows-1251` (so old Cyrillic `.txt` files just work). Up to 5 MB.
+- **Text or file** — type, paste, or open a file. Markup is stripped so only the readable text is shown:
+  - **PDF** (up to 40 MB) — text is extracted in the browser with [pdf.js](https://mozilla.github.io/pdf.js/); images are ignored, words hyphenated at line ends are rejoined.
+    Scanned PDFs (images only) and password-protected PDFs are detected and reported instead of showing nothing.
+  - **Markdown** — front matter, headings, emphasis, links, images, tables, lists, quotes and footnotes are removed; code blocks keep their text.
+  - **HTML, FB2, XML** — scripts, styles and embedded images (FB2 `<binary>`) are dropped; paragraphs become separate words.
+  - **Subtitles** (`.srt`, `.vtt`) — timestamps, cue numbers and tags are removed.
+  - **Plain text** (`.txt`, `.csv`, `.json`, `.log`, …, up to 5 MB) — UTF-8 and UTF-16 are detected by BOM; otherwise a single-byte code page is picked from the interface language
+    (`windows-1251` for ru/uk, `windows-1250` for pl/cs, `windows-1254` for tr, `windows-1252` for the rest). Soft hyphens and zero-width characters are removed.
+  - Unsupported files (`.docx`, `.epub`, `.rtf`, archives, binaries) are rejected with a clear message.
 - **Configurable speed** — 60 to 1500 words per minute, changeable while reading.
 - **Smart timing** — optional longer pause on punctuation (`.` `!` `?` `,` `;` `:`) and on long words.
 - **Focus letter** — highlighted in colour and aligned on the centre line (can be turned off).
@@ -131,7 +138,8 @@ frontend/
 │   ├── components/         Header, InputPanel, Reader, Footer, Icons (each: Name/Name.tsx + Name.css)
 │   ├── hooks/useSettings.ts  persisted settings + theme
 │   ├── i18n/               i18next setup and locales/*.json
-│   ├── lib/text.ts         tokenizer, focus-letter, timing, file decoding
+│   ├── lib/text.ts         tokenizer, focus letter, timing
+│   ├── lib/files.ts        file import: encodings, Markdown/HTML/FB2/subtitles/PDF to plain text
 │   ├── pwa.ts              service-worker registration
 │   └── App.tsx
 ├── vite.config.ts          also fills the precache list of sw.js after the build
@@ -140,7 +148,7 @@ docker-compose.yml          frontend-builder service
 docs/                       screenshots used in this README
 ```
 
-**Stack:** Vite · React 19 · TypeScript · react-i18next + i18next-browser-languagedetector · plain CSS (no UI framework, system fonts).
+**Stack:** Vite · React 19 · TypeScript · react-i18next + i18next-browser-languagedetector · pdf.js (loaded only when a PDF is opened) · plain CSS (no UI framework, system fonts).
 
 ## How the timing works
 
