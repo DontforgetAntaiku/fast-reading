@@ -172,6 +172,10 @@ Files you open are read locally with the browser's `File` API and are never uplo
 Issues and pull requests are welcome — especially for new or corrected translations.
 Please run `npm run build` (it type-checks) before opening a PR.
 
+## License
+
+[MIT](LICENSE) © 2026 Vladyslav Onyshchenko. Third-party packages keep their own licenses (React, i18next and Vite: MIT; pdf.js: Apache-2.0).
+
 ## Credits
 
 Built by [DontforgetAntaiku](https://dontforgetantaiku.dev/).
